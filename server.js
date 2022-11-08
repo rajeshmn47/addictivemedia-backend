@@ -28,7 +28,7 @@ sequelize
     console.error("Unable to connect to the database: ", error);
   });
 app.get("/", async (req, res) => {
-  res.send("API running success");
+  res.send("API running successfully");
 });
 
 const storage = multer.diskStorage({
