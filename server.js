@@ -14,9 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(express.json());
 app.use(cors({
-    origin: "*",
-  })
-);
+  origin: ['https://addictivemediafrontend.vercel.app/','http://127.0.0.1:3000/','http://127.0.0.1:3001/']
+}));
 
 app.use("/api", leadsRoutes);
 sequelize
